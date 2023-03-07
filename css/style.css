@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../img/bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Coming Soon', cursive;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timer__inner {
+  background-color: #86b7e0;
+  opacity: 0.7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.timer__header {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.main-timer__block {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.timer__value {
+  display: block;
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timer__label {
+  display: block;
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .main-timer__block {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
