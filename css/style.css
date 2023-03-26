@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 
+:root {
+  --first-color: #011c40;
+  --secondary-color: #d9958f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +31,7 @@ body {
 }
 
 .timer__inner {
-  background-color: #86b7e0;
+  background-color: var(--first-color);
   opacity: 0.7;
   padding: 30px;
   border-radius: 10px;
@@ -35,7 +40,7 @@ body {
 
 .timer__header {
   font-size: 36px;
-  color: #333;
+  color: var(--secondary-color);
   margin-bottom: 30px;
 }
 
@@ -49,14 +54,14 @@ body {
 .timer__value {
   display: block;
   font-size: 48px;
-  color: #333;
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
 .timer__label {
   display: block;
   font-size: 24px;
-  color: #333;
+  color: var(--secondary-color);
   text-transform: uppercase;
 }
 
